@@ -1,0 +1,17 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+input {
+  max-width: 70px;
+}
+
+body {
+  text-align: center;
+}
+
+form {
+  padding: 20px;
+}
+/*# sourceMappingURL=styles.css.map */

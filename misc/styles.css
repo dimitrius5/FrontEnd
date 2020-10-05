@@ -1,0 +1,29 @@
+.container {
+  padding-top: 20px;
+}
+
+.row > .card-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px;
+  width: 250px;
+}
+
+.card-img-top {
+  margin-top: 10px;
+  max-width: 150px;
+}
+
+.card-body > .card-title.user-name {
+  font-size: 20px;
+}
+
+.card-link.phone, .card-link.email {
+  display: block;
+  margin-left: 0;
+}
+/*# sourceMappingURL=styles.css.map */

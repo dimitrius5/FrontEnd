@@ -1,0 +1,92 @@
+.container {
+    width: 480px;
+    margin: 0 auto;
+    font-family: "Arial";
+}
+
+.heading {
+    text-align: center;
+    padding: 20px;
+}
+
+#header1 {
+    text-decoration: underline;
+}
+.recursion {
+    border-style: solid;
+    padding: 20px;
+}
+
+#header2 {
+    text-decoration: overline;
+}
+ul {
+    text-align: center;
+}
+.recursion2 {
+    display: inline-block;
+    width: 50%;
+}
+
+#header3 {
+    text-decoration: line-through;
+}
+#multistep {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.first-line {
+    padding-top: 20px;
+    color: grey;
+}
+.first-line::first-letter {
+    font-size: 30px;
+}
+#second-block {
+    padding-left: 30px;
+}
+#third-block {
+    padding-left: 60px;
+}
+
+#header4 {
+    text-transform: uppercase;
+}
+#bordered {
+    background-color: lightgrey;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: thin;
+    border-color: gray;
+    padding: 2px;
+}
+img {
+    vertical-align: middle;
+    max-width: 30px;
+}
+
+.nav {
+    background-color: lightgray;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+a[href="#header1"] {
+    text-decoration: underline;
+}
+a[href="#header2"] {
+    text-decoration: overline;
+}
+a[href="#header3"] {
+    text-decoration: line-through;
+}
+a[href="#header4"] {
+    text-transform: uppercase;
+}
+
+h1 {
+    padding-top: 20px;
+    text-align: center;
+    text-decoration: underline overline line-through;
+}

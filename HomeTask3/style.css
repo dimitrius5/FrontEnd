@@ -1,0 +1,61 @@
+a[href^="#anchor"] {
+    text-decoration: none;
+}
+
+a[href="#anchor1"] {
+    color: green;
+}
+
+a[href="#anchor2"] {
+    color: red;
+}
+
+a[href="#anchor5"] {
+    color: blue;
+}
+
+h1 {
+    text-align: center;
+}
+
+.text {
+    font-size: 20px;
+}
+
+.container > div:nth-of-type(2) > h2 {
+    color: green;
+}
+
+.container > div:nth-of-type(2) > .underline {
+    text-decoration: underline;
+}
+
+.container > div:nth-of-type(2) > p:not(.underline) {
+    font-size: 13px;
+}
+
+.container > div:nth-of-type(3) > h2 {
+    color: red;
+}
+
+.container > div:nth-of-type(3) > .underline {
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.container > div:nth-of-type(3) > p:not(.underline) {
+    color: red;
+}
+
+.article2 > h2  {
+    color: blue;
+}   
+
+.article2 > .underline  {
+    color: red;
+    font-size: 12px;
+}
+
+.article2 > p:not(.underline) {
+    color: green;
+}

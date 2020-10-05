@@ -1,0 +1,83 @@
+<head>
+    <!-- <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
+        integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+        crossorigin="anonymous"></script>
+    <script>$(document).ready(function () { $('body').bootstrapMaterialDesign(); });</script>-->
+
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li>2</li>
+            <li>1</li>
+            <li>6</li>
+            <li>7</li>
+            <li>3</li>
+            <li>4</li>
+            <li>10</li>
+            <li>5</li>
+            <li>9</li>
+            <li>8</li>
+        </ul>
+        <style>
+            .row {display: flex;}
+            .col {width: 100px; padding: 10px 15px;text-align: center;}
+            .open {background-color: rgb(75, 184, 75);}
+            .close {background-color: rgb(184, 75, 75);}
+            .broke {background-color: rgb(88, 88, 88); color: #ffffff;}
+        </style>
+        
+        <div class="gates">
+            <div class="row">
+                <div class="col broke">Gate 1</div>
+                <div class="col open">Gate 2</div>
+                <div class="col open">Gate 3</div>
+                <div class="col broke">Gate 4</div>
+            </div>
+            <div class="row">
+                <div class="col close">Gate 5</div>
+                <div class="col broke">Gate 6</div>
+                <div class="col broke">Gate 7</div>
+                <div class="col close">Gate 8</div>
+            </div>
+            <div class="row">
+                <div class="col open">Gate 9</div>
+                <div class="col close">Gate 10</div>
+                <div class="col open">Gate 11</div>
+                <div class="col broke">Gate 12</div>
+            </div>
+            <div class="row">
+                <div class="col broke">Gate 13</div>
+                <div class="col close">Gate 14</div>
+                <div class="col close">Gate 15</div>
+                <div class="col close">Gate 16</div>
+            </div>
+        </div>
+        <table border="1">
+            <tr>
+                <td>ПН</td>
+                <td>ВТ</td>
+                <td>СР</td>
+                <td>ЧТ</td>
+                <td>ПТ</td>
+                <td>СБ</td>
+                <td>ВС</td>
+            </tr>  
+        </table>
+        <table border="1" class="calendar">
+        </table>
+    </div>
+    <script src="userData.js"></script>
+    <script src="script.js"></script>
+</body>

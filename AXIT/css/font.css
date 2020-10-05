@@ -1,0 +1,21 @@
+@font-face {
+  src: url("../fonts/HelveticaNeue.ttf") format("truetype");
+  font-family: "HelveticaNeue";
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("../fonts/Helvetica Neu Bold.ttf") format("truetype");
+  font-family: "HelveticaNeue";
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  src: url("../fonts/HelveticaNeue Light.ttf") format("truetype");
+  font-family: "HelveticaNeue";
+  font-style: normal;
+  font-weight: 300;
+}
+/*# sourceMappingURL=font.css.map */

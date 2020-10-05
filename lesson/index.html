@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 1</title>
+</head>
+
+<body>
+  <form>
+    <table>
+      <tr>
+        <td><label for="tbLogin">Логин:</label></td>
+        <td><input type="text" id="tbLogin" required></td>
+      </tr>
+      <tr>
+        <td><label for="tbPass">Пароль:</label></td>
+        <td><input type="password" id="tbPass" required></td>
+      </tr>
+      <tr>
+        <td><label for="tbPassConfirm">Подтвердите пароль:</label></td>
+        <td><input type="password" id="tbPassConfirm" required></td>
+      </tr>
+      <tr>
+        <td><label for="tbEmail">Email адрес:</label></td>
+        <td><input type="text" id="tbEmail" required></td>
+      </tr>
+      <tr>
+        <td><label for="emailSelect">Показывать email:</label></td>
+        <td>
+          <select name="emailSelect" id="emailSelect">
+            <option value="yes">Да</option>
+            <option value="no">Нет</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="tbPhone">Телефон:</label></td>
+        <td><input type="text" id="tbPhone"></td>
+      </tr>
+      <tr>
+        <td><label for="tbAbout">О себе:</label></td>
+        <td><textarea id="tbAbout" cols="30" rows="10"></textarea></td>
+      </tr>
+      <tr>
+        <td><label for="cbEmail">Получать рассылку:</label></td>
+        <td><input type="checkbox" id="cbEmail" checked></td>
+      </tr>
+    </table>
+    <div><input type="submit" value="Отправить"></div>
+  </form>
+</body>
+
+</html>

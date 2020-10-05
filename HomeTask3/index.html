@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Customize text</title>
+	<link rel="stylesheet" href="do-not-touch-this.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="container">
+		<ul class="navigation">
+			<li><a href="#anchor1">Link 1</a></li>
+			<li><a href="#anchor2">Link 2</a></li>
+			<li><a href="http://google.com">Google</a></li>
+			<li><a href="http://negoogle.com">не Google</a></li>
+			<li><a href="#anchor5">Link 5</a></li>
+		</ul>
+
+		<h1>Я хочу быть по центру</h1>
+
+		<div class="text">
+			<p>Идентификатор имеет приоритет выше, чем у класса. У класса же приоритет выше, чем у элемента.</p>
+			<p>И помните о двух столпах css. Наследование и каскадирование.</p>
+			<ul>
+				<li>Этот список не идеален.</li>
+				<li>Человек, кстати, тоже.</li>
+			</ul>
+		</div>
+
+		<div class="article">
+			<h2 id="anchor1">А я заголовок :) зеленый</h2>
+			<p class="underline">Этот текст должен быть подчекнут, при том полностью, как и текст через пераграф.</p>
+			<p>Я обижен судьбой и меня отказались подчеркивать, поэтому меня нужно сделать менее заметным, скажем... Незаметным на 13 пикселей.</p>
+			<p class="underline">Это тот самый "текст через параграф, который тоже должен быть подчеркнут.</p>
+		</div>
+
+		<div class="article">
+			<h2 id="anchor2">Я тоже заголовок, но красный</h2>
+			<p class="underline">Обратите внимание на иерархию и вспомните про селекторы атрибутов.</p>
+			<p>Меня нужно сделать красного цвета, но не с помощью :nth-child</p>
+			<p class="underline">Поэтому, этот и первый параграф в этом блоке с классом "article" должны быть размером 18 пикселов.</p>
+		</div>
+
+		<div class="article2">
+			<h2 id="anchor5">Окей, я последний заголовок, хочу быть синим</h2>
+			<p class="underline">Мы красные и размером 12 пикселей.</p>
+			<div><p class="underline">Мы красные и размером 18 пикселей.</p></div>
+			<p>А я зеленый и мне пофиг как, можно и через :nth-child</p>
+			<p class="underline">Мы красные и размером 12 пикселей.</p>
+		</div>
+	</div>
+
+</body>
+</html>

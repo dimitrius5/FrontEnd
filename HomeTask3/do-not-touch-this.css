@@ -1,0 +1,23 @@
+a {
+	color: #000
+}
+
+.container {
+	width: 100%;
+	max-width: 640px;
+	margin: auto;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+}
+
+.navigation li {
+	list-style-type: none;
+	padding: 0;
+}
+
+ul {
+	padding: 0;
+}

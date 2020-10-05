@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <div class="app-wrap" data-step="1">
+        <div class="app-wrap__header">Tic Tac Toe</div>
+        <div class="app-wrap__body">
+            <div id="gameStep1" class="game-step game-step_step_1">
+                <h2 class="title">Выберите режим игры</h2>
+                <div class="game-step__option game-mode">
+                    <div class="game-mode__item">
+                        <input id="multiplayer" type="radio" class="game-mode__input" name="game-mode" value="multiplayer">
+                        <label for="multiplayer" class="game-mode__label game-mode__label_mode_multiplayer">Игрок VS Игрок</label>
+                    </div>
+                    <div class="game-mode__item">
+                        <input id="singleplayer" type="radio" class="game-mode__input" name="game-mode" value="singleplayer" checked>
+                        <label for="singleplayer" class="game-mode__label game-mode__label_mode_singleplayer">Игрок VS ИИ</label>
+                    </div>
+                </div>
+                <h2 class="title">Введите ваше имя</h2>
+                <div class="game-step__option players-name">
+                    <div class="players-name__item players-name__item_player_1">
+                        <input id="player1" type="text" class="players-name__input" placeholder="Игрок 1" value="test1">
+                        <div class="players-name__symbol">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="players-name__item players-name__item_player_2">
+                        <input id="player2" type="text" class="players-name__input" placeholder="Игрок 2" value="test2">
+                        <div class="players-name__symbol">
+                            <i class="far fa-circle"></i>
+                        </div>
+                    </div>
+                </div>
+                <button class="button start-game">играть</button>
+            </div>
+
+            <div class="game-step game-step_step_2">
+                <h2 id="currentTurn" class="current-turn-hint current-turn-hint_type_turn current-turn-hint_turn_tac">
+                    Ход игрока: 
+                    <span id="currTurnNickname" class="current-turn-hint__user">UserName</span>
+                    <i class="current-turn-hint__symbol current-turn-hint__symbol_type_tic fas fa-times"></i>
+                    <i class="current-turn-hint__symbol current-turn-hint__symbol_type_tac far fa-circle"></i>
+                </h2>
+
+                <h2 id="winnerName" class="current-turn-hint current-turn-hint_type_winner">
+                    Поздравляем! 
+                    <span id="winnerNickname" class="current-turn-hint__user">UserName</span>,
+                    победил(а)!
+                </h2>
+
+                <div class="game-board">
+                    <div class="game-board__row">
+                        <div class="game-board__cell"></div>
+                        <div class="game-board__cell"></div>
+                        <div class="game-board__cell"></div>
+                    </div>
+                    <div class="game-board__row">
+                        <div class="game-board__cell"></div>
+                        <div class="game-board__cell"></div>
+                        <div class="game-board__cell"></div>
+                    </div>
+                    <div class="game-board__row">
+                        <div class="game-board__cell"></div>
+                        <div class="game-board__cell"></div>
+                        <div class="game-board__cell"></div>
+                    </div>
+                </div>
+
+                <button class="button restart-game">играть еще!</button>
+            </div>
+            <!-- <div class="game-screen"></div> -->
+        </div>
+        <div class="app-wrap__footer">© Tворческое Oбъединение FE-20-2</div>
+    </div>
+</body>
+</html>

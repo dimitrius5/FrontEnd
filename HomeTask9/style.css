@@ -1,0 +1,68 @@
+body {
+    background: rgb(58,58,58);
+    background: linear-gradient(90deg, rgba(58,58,58,1) 0%, rgba(79,79,79,1) 44%, rgba(58,58,58,1) 100%);
+}
+
+.menu-bg {
+    border-radius: 50px;
+    max-width: 305px;
+    margin: 20px auto 0 auto;
+    box-shadow: 0px 6px 0px 0px #484848, 0px 7px 0px 0px #5D5D5D,
+                0px -5px 0px 0px #484848, 0px -6px 0px 0px #3B3B3B, 0px -7px 0px 0px #2E2E2E;
+}
+.menu {
+    display: flex;
+    border-radius: 50px;
+    max-width: 300px;
+    font-size: 12px;
+    font-family: sans-serif;
+    padding: 10px 10px 10px;
+    margin: 20px auto 0 auto;
+    background: rgb(227,228,236);
+    background: linear-gradient(30deg, rgba(227,228,236,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+}
+
+.menu-item {
+    position: relative;
+    padding: 4px 10px 4px 10px;
+    margin: -4px 0 -4px 0;
+    border-right: 1px dotted #CFD1D9;
+    font-weight: bold;
+    color: #555;
+}
+.menu-item:last-of-type {
+    border: none;
+}
+.menu-item:hover {
+    text-decoration: underline;
+}
+
+.notify {
+    position: absolute;
+    top: -17px;
+    right: 2px;
+    z-index: 1;
+    border: 1px solid;
+    border-radius: 10px;
+    color: #fff;
+    padding: 1px 5px 1px 5px;
+    font-weight: normal;
+    font-family: serif;
+    text-shadow: 0px 1px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 1px 0px rgba(0,0,0,0.2);
+}
+.notify.profile {
+    background: rgb(140,190,89);
+    background: linear-gradient(180deg, rgba(140,190,89,1) 0%, rgba(108,155,61,1) 100%);
+    border-color: #42582B;
+}
+.notify.settings {
+    background: rgb(99,165,233);
+    background: linear-gradient(180deg, rgba(99,165,233,1) 0%, rgba(44,132,224,1) 100%);
+    border-color: #215A96;
+}
+.notify.notif {
+    background: rgb(233,100,111);
+    background: linear-gradient(180deg, rgba(233,100,111,1) 0%, rgba(222,39,54,1) 100%);
+    border-color: #911F28;
+}

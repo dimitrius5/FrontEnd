@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://learn.javascript.ru/task/find-elements/table.html -->
+<html>
+  <script src="script.js" async></script>
+  <script>
+(() => {
+/**
+ * This script injected by the installed three.js developer
+ * tools extension.
+ * https://github.com/threejs/three-devtools
+ */
+
+const $devtoolsReady = Symbol('devtoolsReady');
+const $backlog = Symbol('backlog');
+
+// The __THREE_DEVTOOLS__ target is small and light-weight, and collects
+// events triggered until the devtools panel is ready, which is when
+// the events are flushed.
+const target = new class ThreeDevToolsTarget extends EventTarget {
+  constructor() {
+    super();
+    this[$devtoolsReady] = false;
+    this[$backlog] = [];
+    this.addEventListener('devtools-ready', e => {
+      this[$devtoolsReady] = true;
+      for (let event of this[$backlog]) {
+        this.dispatchEvent(event);
+      }
+    }, { once: true });
+  }
+
+  dispatchEvent(event) {
+    if (this[$devtoolsReady] || event.type === 'devtools-ready') {
+      super.dispatchEvent(event);
+    } else {
+      this[$backlog].push(event);
+    }
+  }
+}
+
+Object.defineProperty(window, '__THREE_DEVTOOLS__', {
+  value: target,
+});
+})();
+</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>
+  <form name="search">
+    <label>Search the site:
+      <input type="text" name="search">
+    </label>
+    <input type="submit" value="Search!">
+  </form>
+
+  <hr>
+
+  <form name="search-person">
+    Search the visitors:
+    <table id="age-table">
+      <tbody><tr>
+        <td>Age:</td>
+        <td id="age-list">
+          <label>
+            <input type="radio" name="age" value="young">less than 18</label>
+          <label>
+            <input type="radio" name="age" value="mature">18-50</label>
+          <label>
+            <input type="radio" name="age" value="senior">more than 50</label>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Additionally:</td>
+        <td>
+          <input type="text" name="info[0]">
+          <input type="text" name="info[1]">
+          <input type="text" name="info[2]">
+        </td>
+      </tr>
+
+    </tbody></table>
+
+    <input type="submit" value="Search!">
+  </form>
+  <form name="search">
+    <input type="text" name="value" id="value">
+
+  </form>
+
+<ul id="list-template"></ul>
+</body></html>

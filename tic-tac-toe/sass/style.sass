@@ -1,0 +1,246 @@
+@import ./_options
+@import ./_default
+
+.app-wrap
+    display: flex
+    flex-direction: column
+    width: 100%
+    height: 100%
+    position: fixed
+    top: 0
+    left: 0
+    background: linear-gradient(to top right, #f904ff, #6b88fe, #02e8ff)
+    &__header
+        padding: .5em 0
+        font-size: 5rem
+        font-weight: bold
+        text-align: center
+    &__body
+        flex-grow: 1
+        display: flex
+        justify-content: center
+        align-items: center
+    &__footer
+        padding: .5em 0
+        font-size: 1.5rem
+        text-align: center
+
+.game-step
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+    max-width: 980px
+
+.title 
+    font-size: 3rem
+    text-align: center
+    margin-bottom: .5em
+
+.game-mode
+    display: flex
+    margin-bottom: 7rem
+    &__input
+        display: none
+    &__label
+        display: inline-block
+        width: 12.6em
+        padding: 0.5em 2em
+        background: linear-gradient(to right, #feba00, #fd4aa6)
+        font-size: 2rem
+        text-align: center
+        margin: 0 2rem
+        cursor: pointer
+        position: relative
+        &:before 
+            content: ""
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 1.5em
+            width: 2.4em
+            height: 100%
+            position: absolute
+            top: 0
+            background: #fff
+            color: #000000
+            font-family: 'Font Awesome 5 Free'
+            font-weight: 900
+        &_mode
+            &_singleplayer
+                border-top-left-radius: 1.5em
+                background: linear-gradient(to left, #feba00, #fd4aa6)
+                &:before
+                    left: calc(100% + .3em)
+                    border-radius: 0 1.5em 1.5em 0
+            &_multiplayer
+                border-top-right-radius: 1.5em
+                &:before
+                    right: calc(100% + .3em)
+                    border-radius: 1.5em 0 0 1.5em
+    &__input:checked + &__label:before
+        content: "\f00c"
+
+.players-name
+    display: flex
+    &_single
+        .players-name__item_player_2
+            display: none
+    &__item
+        display: flex
+        margin: 0 2rem
+        position: relative
+        font-size: 1.8rem
+        &_player
+            &_1
+                .players-name
+                    &__symbol
+                        left: 0
+                    &__input
+                        padding-left: 3.3em
+            &_2
+                .players-name
+                    &__input
+                        padding-right: 3.3em
+                        background: linear-gradient(to left, #fe706f, #feb403)
+                    &__symbol
+                        right: 0
+    &__input
+        display: block
+        width: 12.6em
+        padding: 0.5em 1em
+        border: none
+            radius: 2em
+        font-size: 1em
+        color: inherit
+        background: linear-gradient(to right, #fe706f, #feb403)
+        text-align: center
+        &::placeholder
+            color: rgba(#fff, .5)
+    &__symbol
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 1.5em
+        height: 1.5em
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        background-color: #fff
+        color: #fe706f
+        font-size: 2em
+        border-radius: 50%
+
+.button
+    color: #353535
+    background-color: #fff
+    border: none
+    text-transform: uppercase
+    font-size: 2.5rem
+    letter-spacing: .1em
+    border-radius: 2em
+    padding: 0.38em 1.4em 0.3em
+    position: relative
+    &:before, &:after
+        content: ""
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        border-radius: 4em
+    &:before
+        width: calc(100% + 2em)
+        height: calc(100% + 2em)
+        background: linear-gradient(to top, #fe706f, #feb403)
+        z-index: -2
+    &:after
+        width: calc(100% + 1em)
+        height: calc(100% + 1em)
+        background: #767efe
+        z-index: -1
+
+.start-game
+    margin-top: calc(7rem + 2em)
+
+.restart-game
+    display: none
+    margin-top: calc(1rem + 2em)
+    
+.current-turn-hint 
+    font-size: 4rem
+    font-weight: normal
+    margin-bottom: 0.5em
+    &_type 
+        &_winner
+            display: none
+    &_turn
+        &_tic
+            .current-turn-hint__symbol_type_tic
+                display: inline-flex
+        &_tac
+            .current-turn-hint__symbol_type_tac
+                display: inline-flex
+    &__user
+        font-weight: bold
+        text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1)
+    &__symbol
+        display: none
+        justify-content: center
+        align-items: center
+        width: 1.8em
+        height: 1.8em
+        border: .1em solid #fff
+    
+
+.game-board
+    width: 100%
+    max-width: 600px
+    position: relative
+    &:before, &:after 
+        content: ""
+        width: 100%
+        height: calc(100% / 3)
+        border-top: .5rem solid #fff 
+        border-bottom: .5rem solid #fff 
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        pointer-events: none
+    &:after
+        transform: translate(-50%, -50%) rotate(90deg)
+    &__row
+        display: flex
+    &__cell
+        width: calc(100% / 3)
+        padding-bottom: calc(100% / 3)
+        position: relative
+    &__item
+        font-size: 12rem
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+[data-step="1"]
+    .game-step_step_2
+        visibility: hidden
+        position: fixed
+
+[data-step="2"]
+    .game-step_step_1
+        visibility: hidden
+        position: fixed
+
+[data-step="3"]
+    .game-step_step_1
+        visibility: hidden
+        position: fixed
+    .current-turn-hint
+        &_type
+            &_turn
+                display: none
+            &_winner
+                display: block
+    .restart-game
+        display: flex

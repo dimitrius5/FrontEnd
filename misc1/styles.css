@@ -1,0 +1,13 @@
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  padding-right: 15px;
+}
+/*# sourceMappingURL=styles.css.map */
