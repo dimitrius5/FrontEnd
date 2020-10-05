@@ -1,6 +1,6 @@
 html {
   font-family: "HelveticaNeue";
-  font-size: 15px;
+  font-size: 14px;
   font-weight: normal;
   color: #3e434a;
 }
@@ -15,15 +15,16 @@ a:hover.button {
 
 .container {
   width: 100%;
-  max-width: 1110px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
 .navbar {
   padding: 20px 0 20px 0;
-  color: #ffffff;
   position: absolute;
+  color: #fff;
+  background-color: #000;
   top: 0;
   left: 0;
   width: 100%;
@@ -68,8 +69,42 @@ a:hover.button {
 }
 
 .block1 {
-  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(../img/cover.jpg);
+  background-size: cover;
   color: #ffffff;
+}
+
+.background-tint {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
+
+.logo_big {
+  font-size: 72px;
+  text-transform: uppercase;
+}
+
+.product-name {
+  font-size: 36px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.product-name:after {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  content: '';
+  width: 100px;
+  border-bottom: 4px solid #fff;
+}
+
+.main {
+  padding-top: 60px;
 }
 
 .main-title {
