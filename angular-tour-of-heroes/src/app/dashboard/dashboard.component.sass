@@ -1,0 +1,35 @@
+[class*='col-']:last-of-type
+    padding-right: 0
+
+a
+    text-decoration: none
+
+*, *:before, *:after
+    box-sizing: border-box
+
+h3
+    text-align: center
+    margin-bottom: 0
+h4
+    position: relative
+.grid
+    margin: 0
+    &-pad
+        padding: 10px 0
+.col-1-4
+    display: inline-block
+    width: 20%
+    & + &
+        margin-left: 20px
+.module
+    padding: 20px
+    text-align: center
+    color: #eee
+    max-height: 120px
+    min-width: 120px
+    background-color: #607d8b
+    border-radius: 2px
+    &:hover
+        background-color: #eee
+        cursor: pointer
+        color: #607d8b
