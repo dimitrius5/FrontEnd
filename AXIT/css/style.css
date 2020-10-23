@@ -81,7 +81,7 @@ a:hover.button {
   background-image: url(../img/cover.jpg);
   background-size: cover;
   color: #ffffff;
-  padding-top: 170px;
+  padding: 170px 0px 140px;
 }
 
 .background-tint {
@@ -116,8 +116,9 @@ a:hover.button {
 
 .product-desc {
   font-size: 16px;
-  opacity: .6;
-  padding-top: 40px;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 40px 0px 40px 0px;
+  line-height: 1.45;
 }
 
 .signup-form {
@@ -178,5 +179,60 @@ a:hover.button {
   background-color: #ff9b51;
   width: 100%;
   border: none;
+}
+
+.btn-download {
+  padding: 15px 30px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  -webkit-transition: .2s;
+  transition: .2s;
+  font-weight: 500px;
+}
+
+.btn-download:hover {
+  background-color: #ff9b51;
+  border: 2px solid #ff9b51;
+}
+
+.brand-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0px 12px;
+  color: #ccc;
+}
+
+.brand-bar__left__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+.brand-bar__right {
+  font-size: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.brand-bar__right a:hover {
+  color: #ff9b51;
+}
+
+.separator {
+  height: 8px;
+  -webkit-box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.75);
 }
 /*# sourceMappingURL=style.css.map */
