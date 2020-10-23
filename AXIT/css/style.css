@@ -207,10 +207,16 @@ a:hover.button {
   color: #ccc;
 }
 
+.brand-bar__left {
+  max-width: 400px;
+  padding-right: 80px;
+}
+
 .brand-bar__left__title {
   font-size: 20px;
   font-weight: 700;
   color: #000;
+  padding-bottom: 5px;
 }
 
 .brand-bar__right {
@@ -221,9 +227,9 @@ a:hover.button {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .brand-bar__right a:hover {
