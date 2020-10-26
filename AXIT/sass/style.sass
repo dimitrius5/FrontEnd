@@ -121,6 +121,9 @@ a:hover
     background-color: #ff9b51
     width: 100%
     border: none
+    transition: .2s
+    &:hover
+      background-color: #fd7714
 
 .btn-download
   padding: 15px 30px
@@ -128,7 +131,7 @@ a:hover
   background-color: transparent
   border: 2px solid #fff
   transition: .2s
-  font-weight: 500px
+  font-weight: 500
   &:hover
     background-color: #ff9b51
     border: 2px solid #ff9b51
@@ -137,7 +140,7 @@ a:hover
   display: flex
   justify-content: space-between
   padding: 20px 0px 12px
-  color: #ccc
+  color: #aaa
   &__left
     max-width: 400px
     padding-right: 80px
@@ -156,3 +159,10 @@ a:hover
 .separator
   height: 8px
   box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
+
+.features
+  display: flex
+  align-items: flex-start
+  margin: 100px 0px 0px 0px
+.city-reflected
+  margin: 25px 0px 0px 100px
