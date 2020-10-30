@@ -249,13 +249,12 @@ a:hover.button {
 }
 
 .features {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin: 100px 0px 0px 0px;
+  padding: 100px 0px 115px 0px;
+}
+
+.features__0 {
+  margin-top: 3px;
+  background-color: #f5f5f5;
 }
 
 .city-reflected {

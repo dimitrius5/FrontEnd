@@ -80,6 +80,7 @@
 
 .tabs__content.active {
   display: block;
+  background: transparent;
 }
 
 .vertical .tabs__caption {
