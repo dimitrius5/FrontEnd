@@ -1,4 +1,5 @@
 @import _colors.sass
+@import _mixins.sass
 
 html
   font-family: "HelveticaNeue"
@@ -73,17 +74,12 @@ a:hover
   text-transform: uppercase
   position: relative
   padding-bottom: 40px
-  &:after
-    position: absolute
-    bottom: 0
-    display: block
-    content: ''
-    width: 65px
-    border-bottom: 3px solid #fff
+  @include short-underline(3px, #fff)
+
 .product-desc
   font-size: 16px
   color: rgba(#fff, .6)
-  padding: 40px 0px 40px 0px
+  padding: 10px 0px 40px 0px
   line-height: 1.45
 
 .signup-form
@@ -99,7 +95,7 @@ a:hover
     background-color: #f5f5f5
     text-align: center
     &__orange
-      color: #ff9b51
+      color: $primary-bg
   &__inputs
     padding: 0px 40px 45px 40px
   &__input
@@ -118,7 +114,7 @@ a:hover
     color: #fff
     font-size: 15px
     padding: 20px 40px 20px 40px
-    background-color: #ff9b51
+    background-color: $primary-bg
     width: 100%
     border: none
     transition: .2s
@@ -133,8 +129,8 @@ a:hover
   transition: .2s
   font-weight: 500
   &:hover
-    background-color: #ff9b51
-    border: 2px solid #ff9b51
+    background-color: $primary-bg
+    border: 2px solid $primary-bg
 
 .brand-bar
   display: flex
@@ -155,7 +151,7 @@ a:hover
     flex-grow: 1
     justify-content: space-between
     & a:hover
-      color: #ff9b51
+      color: $primary-bg
 .separator
   height: 8px
   box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75)
@@ -172,12 +168,7 @@ a:hover
       font-size: 20px
       font-weight: 700
       color: #000
-      &:after
-        display: block
-        content: ''
-        width: 65px
-        border-bottom: 2px solid #ff9b51
-        padding-bottom: 30px
+      @include short-underline()
     &__text
       padding: 30px 0px 50px 0px
     &__list
@@ -201,12 +192,7 @@ a:hover
         font-size: 20px
         font-weight: 700
         color: #000
-        &:after
-          display: block
-          content: ''
-          width: 65px
-          border-bottom: 2px solid #ff9b51
-          padding-bottom: 30px
+        @include short-underline()
       &__text
         padding: 30px 0px 50px 0px
         & p
@@ -223,7 +209,7 @@ a:hover
   width: 40px
   height: 40px
   margin-top: 5px
-  color: #ff9b51
-  border: 2px solid #ff9b51
+  color: $primary-bg
+  border: 2px solid $primary-bg
   border-radius: 50%
   padding: 10px
