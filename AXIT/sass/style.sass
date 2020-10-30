@@ -59,9 +59,9 @@ a:hover
   background-size: cover
   color: #ffffff
   padding: 170px 0px 140px
-.background-tint 
-  background-color: rgba(0,0,0,.5);
-  background-blend-mode: multiply;
+.background-tint
+  background-color: rgba(0,0,0,.5)
+  background-blend-mode: multiply
 
 .product-col
   max-width: 512px
@@ -72,14 +72,14 @@ a:hover
   font-size: 36px
   text-transform: uppercase
   position: relative
-  padding-bottom: 40px;
+  padding-bottom: 40px
   &:after
     position: absolute
     bottom: 0
     display: block
     content: ''
     width: 65px
-    border-bottom: 4px solid #fff
+    border-bottom: 3px solid #fff
 .product-desc
   font-size: 16px
   color: rgba(#fff, .6)
@@ -158,14 +158,72 @@ a:hover
       color: #ff9b51
 .separator
   height: 8px
-  box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75)
 
 .features
-  padding: 100px 0px 115px 0px
+  padding: 100px 0px 60px 0px
   &__0
     margin-top: 3px
     background-color: #f5f5f5
-  &__1
-    
+  &__1__right
+    padding-left: 100px
+    color: #aaa
+    &__title
+      font-size: 20px
+      font-weight: 700
+      color: #000
+      &:after
+        display: block
+        content: ''
+        width: 65px
+        border-bottom: 2px solid #ff9b51
+        padding-bottom: 30px
+    &__text
+      padding: 30px 0px 50px 0px
+    &__list
+      &__li
+        display: flex
+        &__text
+          margin-left: 30px
+          &__title
+            font-weight: 700
+            color: #000
+            padding-bottom: 10px
+      &__li:first-of-type
+        padding-bottom: 40px
+
+  &__2
+    background-color: #f5f5f5
+    &__left
+      padding-right: 100px
+      color: #aaa
+      &__title
+        font-size: 20px
+        font-weight: 700
+        color: #000
+        &:after
+          display: block
+          content: ''
+          width: 65px
+          border-bottom: 2px solid #ff9b51
+          padding-bottom: 30px
+      &__text
+        padding: 30px 0px 50px 0px
+        & p
+          padding-bottom: 25px
+
 .city-reflected
   margin: 25px 0px 0px 100px
+.city-roofs
+  margin-left: -50px
+.city-skyline
+  margin-right: -50px
+
+.circle-icon
+  width: 40px
+  height: 40px
+  margin-top: 5px
+  color: #ff9b51
+  border: 2px solid #ff9b51
+  border-radius: 50%
+  padding: 10px
