@@ -1,3 +1,8 @@
-body:hover { color: #ccc; }
+body {
+  color: #000;
+}
 
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLnNhc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsYUFFUSxXQUFXLEVBQUEiLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XG4gICAgJjpob3ZlciB7XG4gICAgICAgIGNvbG9yOiAjY2NjOyB9IH1cbiJdfQ== */
+body:hover {
+  color: #fff000;
+}
+/*# sourceMappingURL=style.css.map */
