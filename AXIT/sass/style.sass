@@ -157,7 +157,7 @@ a:hover
   box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.75)
 
 .features
-  padding: 100px 0px 60px 0px
+  padding-top: 100px
   &__0
     margin-top: 3px
     background-color: #f5f5f5
@@ -223,9 +223,9 @@ a:hover
   border-radius: 50%
   padding: 14px
 
-
-.awesome
+.showcase
   text-align: center
+  padding-top: 180px
   &__title
     text-transform: uppercase
     &:after
@@ -245,3 +245,31 @@ a:hover
         padding: 20px 0px
       &__text
         color: $grey-text
+
+      &__header
+        background-color: $primary-color
+        color: #fff
+        margin: 0px 20px
+        padding: 15px 0px
+        font-size: 20px
+        font-weight: 700
+        border-bottom: 1px solid $grey-text
+      &__price
+        background-color: $primary-color
+        color: #fff
+        margin: 0px 20px
+        padding: 15px 0px
+        font-size: 24px
+        font-weight: 700
+        border-bottom: 5px solid $primary-bg
+        &__sub
+          padding-top: 10px
+          font-size: 14px
+          color: $grey-text
+          font-weight: 500
+          font-style: italic
+      &__features
+        &__feature
+          text-transform: uppercase
+          padding-top: 30px
+

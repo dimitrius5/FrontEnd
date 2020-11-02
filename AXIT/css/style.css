@@ -248,7 +248,7 @@ a:hover.button {
 }
 
 .features {
-  padding: 100px 0px 60px 0px;
+  padding-top: 100px;
 }
 
 .features__0 {
@@ -362,19 +362,20 @@ a:hover.button {
   padding: 14px;
 }
 
-.awesome {
+.showcase {
   text-align: center;
+  padding-top: 180px;
 }
 
-.awesome__title {
+.showcase__title {
   text-transform: uppercase;
 }
 
-.awesome__title:after {
+.showcase__title:after {
   margin: 0 auto;
 }
 
-.awesome__title:after {
+.showcase__title:after {
   display: block;
   content: '';
   width: 65px;
@@ -382,26 +383,59 @@ a:hover.button {
   padding-bottom: 30px;
 }
 
-.awesome__text {
+.showcase__text {
   padding-top: 25px;
   color: #aaa;
 }
 
-.awesome__cards {
+.showcase__cards {
   padding-top: 80px;
 }
 
-.awesome__cards__card i {
+.showcase__cards__card i {
   font-size: 20px;
 }
 
-.awesome__cards__card__title {
+.showcase__cards__card__title {
   font-size: 20px;
   font-weight: 700;
   padding: 20px 0px;
 }
 
-.awesome__cards__card__text {
+.showcase__cards__card__text {
   color: #aaa;
+}
+
+.showcase__cards__card__header {
+  background-color: #3e434a;
+  color: #fff;
+  margin: 0px 20px;
+  padding: 15px 0px;
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 1px solid #aaa;
+}
+
+.showcase__cards__card__price {
+  background-color: #3e434a;
+  color: #fff;
+  margin: 0px 20px;
+  padding: 15px 0px;
+  font-size: 24px;
+  font-weight: 700;
+  border-bottom: 5px solid #ff9b51;
+}
+
+.showcase__cards__card__price__sub {
+  padding-top: 10px;
+  font-size: 14px;
+  color: #aaa;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.showcase__cards__card__features__feature {
+  text-transform: uppercase;
+  padding-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */

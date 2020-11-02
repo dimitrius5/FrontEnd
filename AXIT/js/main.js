@@ -1,6 +1,6 @@
 'use strict';
 
-$('.awesome__cards').slick({
+const slickConfig = {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
@@ -25,4 +25,6 @@ $('.awesome__cards').slick({
             }
         },
     ]
-});
+};
+
+$('.showcase__cards').slick(slickConfig);
