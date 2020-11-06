@@ -74,7 +74,7 @@ a:hover
   text-transform: uppercase
   position: relative
   padding-bottom: 40px
-  @include short-underline(3px, #fff)
+  @include short-underline(2px, #fff)
 
 .product-desc
   font-size: 16px
@@ -97,6 +97,7 @@ a:hover
     &__orange
       color: $primary-bg
   &__inputs
+    flex-grow: 1
     padding: 0px 40px 45px 40px
   &__input
     font-size: 14px
@@ -107,6 +108,7 @@ a:hover
     display: block
     border: none
     border-bottom: 1px solid #d6d6d6
+    resize: none
     &::placeholder
       color: #bdbdbd
 
@@ -120,9 +122,16 @@ a:hover
     transition: .2s
     &:hover
       background-color: #fd7714
+    &.message
+      width: unset
+      border-radius: 3px
+      box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.75)
+  &__body
+    display: flex
+    flex-grow: 1
 
 .btn-download
-  padding: 15px 30px
+  padding: 10px 30px
   color: #fff
   background-color: transparent
   border: 2px solid #fff
@@ -226,20 +235,11 @@ a:hover
 //sliders
 .showcase
   //common
-  text-align: center
-  padding-top: 180px
-  &__title
-    text-transform: uppercase
-    &:after
-     margin: 0 auto
-    @include short-underline()
-  &__text
-    padding-top: 25px
-    color: $grey-text
+  @include block-title()
   &__cards
     padding-top: 30px
     &__card
-      margin-top: 35px
+      margin-top: 32px
       
       //features
       & i
@@ -316,7 +316,13 @@ a:hover
     text-transform: uppercase
     &:after
      margin: 0 auto
-    @include short-underline(3px, #fff)
+    @include short-underline(2px, #fff)
   &__desc
     color: rgba(255, 255, 255, 0.6)
     padding: 30px 0px
+
+.contact
+  @include block-title()
+  &__text
+    padding-bottom: 60px
+  

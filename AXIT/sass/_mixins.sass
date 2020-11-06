@@ -5,4 +5,17 @@
     width: 65px
     border-bottom: $width solid $color
     padding-bottom: 30px
+  
+@mixin block-title()
+  text-align: center
+  padding-top: 100px
+  &__title
+    text-transform: uppercase
+    font-weight: 500
+    &:after
+     margin: 0 auto
+    @include short-underline()
+  &__text
+    padding-top: 25px
+    color: $grey-text
     

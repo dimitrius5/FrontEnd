@@ -109,7 +109,7 @@ a:hover.button {
   display: block;
   content: '';
   width: 65px;
-  border-bottom: 3px solid #fff;
+  border-bottom: 2px solid #fff;
   padding-bottom: 30px;
 }
 
@@ -141,6 +141,9 @@ a:hover.button {
 }
 
 .signup-form__inputs {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 0px 40px 45px 40px;
 }
 
@@ -153,6 +156,7 @@ a:hover.button {
   display: block;
   border: none;
   border-bottom: 1px solid #d6d6d6;
+  resize: none;
 }
 
 .signup-form__input::-webkit-input-placeholder {
@@ -186,8 +190,24 @@ a:hover.button {
   background-color: #fd7714;
 }
 
+.signup-form__submit.message {
+  width: unset;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 3px 3px -3px rgba(0, 0, 0, 0.75);
+}
+
+.signup-form__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .btn-download {
-  padding: 15px 30px;
+  padding: 10px 30px;
   color: #fff;
   background-color: transparent;
   border: 2px solid #fff;
@@ -364,11 +384,12 @@ a:hover.button {
 
 .showcase {
   text-align: center;
-  padding-top: 180px;
+  padding-top: 100px;
 }
 
 .showcase__title {
   text-transform: uppercase;
+  font-weight: 500;
 }
 
 .showcase__title:after {
@@ -393,7 +414,7 @@ a:hover.button {
 }
 
 .showcase__cards__card {
-  margin-top: 35px;
+  margin-top: 32px;
 }
 
 .showcase__cards__card i {
@@ -504,12 +525,43 @@ a:hover.button {
   display: block;
   content: '';
   width: 65px;
-  border-bottom: 3px solid #fff;
+  border-bottom: 2px solid #fff;
   padding-bottom: 30px;
 }
 
 .custom__desc {
   color: rgba(255, 255, 255, 0.6);
   padding: 30px 0px;
+}
+
+.contact {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.contact__title {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.contact__title:after {
+  margin: 0 auto;
+}
+
+.contact__title:after {
+  display: block;
+  content: '';
+  width: 65px;
+  border-bottom: 2px solid #ff9b51;
+  padding-bottom: 30px;
+}
+
+.contact__text {
+  padding-top: 25px;
+  color: #aaa;
+}
+
+.contact__text {
+  padding-bottom: 60px;
 }
 /*# sourceMappingURL=style.css.map */
