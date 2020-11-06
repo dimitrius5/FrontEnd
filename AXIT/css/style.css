@@ -389,7 +389,7 @@ a:hover.button {
 }
 
 .showcase__cards {
-  padding-top: 80px;
+  padding-top: 30px;
 }
 
 .showcase__cards__card {
@@ -418,6 +418,7 @@ a:hover.button {
   font-size: 20px;
   font-weight: 700;
   border-bottom: 1px solid #aaa;
+  margin-top: 50px;
 }
 
 .showcase__cards__card__price {
@@ -446,7 +447,39 @@ a:hover.button {
 }
 
 .showcase__cards__card__features__feature {
+  color: #aaa;
   text-transform: uppercase;
   padding-top: 30px;
+}
+
+.showcase__cards__card__quote {
+  text-align: left;
+  color: #aaa;
+  font-style: italic;
+  max-width: 70%;
+}
+
+.showcase__cards__card__author {
+  padding-top: 50px;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.showcase__cards__card__author__text {
+  padding-left: 12px;
+}
+
+.showcase__cards__card__author__text__name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.showcase__cards__card__author__text__job {
+  color: #aaa;
 }
 /*# sourceMappingURL=style.css.map */
