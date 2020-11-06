@@ -482,4 +482,34 @@ a:hover.button {
 .showcase__cards__card__author__text__job {
   color: #aaa;
 }
+
+.custom {
+  margin-top: 100px;
+  padding: 70px 0px 62px 0px;
+  text-align: center;
+  color: #fff;
+  background-image: url(../img/u25_state0.png);
+}
+
+.custom__title {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.custom__title:after {
+  margin: 0 auto;
+}
+
+.custom__title:after {
+  display: block;
+  content: '';
+  width: 65px;
+  border-bottom: 3px solid #fff;
+  padding-bottom: 30px;
+}
+
+.custom__desc {
+  color: rgba(255, 255, 255, 0.6);
+  padding: 30px 0px;
+}
 /*# sourceMappingURL=style.css.map */
