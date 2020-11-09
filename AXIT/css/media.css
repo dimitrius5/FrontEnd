@@ -31,6 +31,13 @@
   .showcase:first-of-type {
     padding-top: 0px;
   }
+  .tabs__content {
+    padding-left: 10px;
+  }
+  .tabs__caption li {
+    width: 50px;
+    height: 50px;
+  }
   .city-skyline {
     margin-bottom: -30px;
     display: block;
@@ -48,6 +55,12 @@
   }
 }
 
+@media (min-width: 768px) {
+  .nav-toggle {
+    visibility: hidden;
+  }
+}
+
 @media (max-width: 767px) {
   .container {
     max-width: 640px;
@@ -58,6 +71,57 @@
   }
   .brand-bar__right > a {
     margin-right: 7px;
+  }
+  .nav {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .nav-list {
+    padding-top: 40px;
+    background-color: #fff;
+    color: #000000;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: .3s;
+    transition: .3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+  .nav-list li + li {
+    margin-left: 0;
+  }
+  .nav-list-link {
+    display: block;
+    width: 240px;
+    font-size: 28px;
+    padding: 10px;
+  }
+  .nav.nav_active {
+    visibility: visible;
+    opacity: 1;
+  }
+  .nav-list.nav_active {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  .nav-toggle {
+    display: block;
   }
 }
 

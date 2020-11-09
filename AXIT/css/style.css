@@ -30,7 +30,12 @@ a:hover.button {
   width: 100%;
 }
 
-.navbar.sticky {
+.nav-list-link {
+  color: #aaa;
+  font-weight: 600;
+}
+
+.nav-list-link.sticky {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 50;
@@ -52,6 +57,17 @@ a:hover.button {
   font-size: 21px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.logo__ax {
+  display: inline;
+  font-weight: 700;
+}
+
+.logo__it {
+  display: inline;
+  font-weight: 500;
+  color: #ff9b51;
 }
 
 .nav-list {
