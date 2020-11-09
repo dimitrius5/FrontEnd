@@ -20,15 +20,6 @@ a:hover.button {
   padding: 0 10px;
 }
 
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .navbar {
   padding: 20px 0 20px 0;
   position: absolute;
@@ -356,10 +347,6 @@ a:hover.button {
 
 .city-roofs {
   margin-left: -50px;
-}
-
-.city-skyline {
-  margin-right: -50px;
 }
 
 .circle-icon {
